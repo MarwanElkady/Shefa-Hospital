@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'Login.dart';
+import 'Welcome_Page.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -15,10 +15,10 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     // Navigate to Login page after 3 seconds
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Login()),
+        MaterialPageRoute(builder: (context) => const Welcome()),
       );
     });
   }
