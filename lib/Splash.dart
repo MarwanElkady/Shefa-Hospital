@@ -15,7 +15,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     // Navigate to Login page after 3 seconds
-    Future.delayed(const Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Welcome()),
